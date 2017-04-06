@@ -59,6 +59,8 @@ requirejs(['ext_editor_io', 'jquery_190'],
             var htmlErrors = '';
             if (userResult.length > 1) {
                 htmlErrors += '<li> - Only one email should be sent</li>';
+            } else if (!userResult.length) {
+                htmlErrors += '<li> - One email should be sent</li>';
             } else {
                 if (userResult[0].subject != rightResult[0].subject) {
                     htmlErrors += '<li> - "' + userResult[0].subject + '" is a wrong subject</li>';
