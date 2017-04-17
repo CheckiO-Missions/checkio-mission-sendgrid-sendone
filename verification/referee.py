@@ -28,7 +28,10 @@ checkio.referee.cover_codes
 
 SENDGRID_COVER = '''
 import sendgrid
-import sendgrid.cio as cio
+try:
+    import sendgrid.cio as cio
+except ImportError:
+    import cio
 cio.set_testing_mode()
 
 
