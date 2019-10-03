@@ -8,8 +8,8 @@ requirejs(['ext_editor_io', 'jquery_190'],
         var io = new extIO({
             multipleArguments: true,
             functions: {
-                js: 'sumTwo',
-                python: 'sum_two'
+                js: 'sendEmail',
+                python: 'send_email'
             }
         });
         io.extAnimateSlide = function (this_e, data, options) {
