@@ -1,7 +1,7 @@
 import sendgrid
 from sendgrid.helpers.mail import Mail
 
-API_KEY = 'Registrate your own key'
+API_KEY = 'Enter the API key here that you generated at SendGrid.com'
 SUBJECT = 'Welcome'
 BODY = 'Hi {}'
 
